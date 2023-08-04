@@ -1,0 +1,194 @@
+// Title
+.title {
+  padding: 35px;
+
+  font-size: 25px;
+  font-weight: 700;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+// Search
+.search {
+  margin: 30px;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: $dark;
+
+  // Search Input
+  &__input {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20px;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    background-color: $dark;
+  }
+
+  // Search Button
+  &__btn {
+    padding: 15px 25px;
+    height: 100%;
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    background-color: $lightBlue;
+  }
+}
+
+// Weather
+.weather {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 10px;
+  background-color: $black;
+
+  // Weather Top
+  &__top {
+    padding: 30px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+
+    background-color: $black;
+
+    @media screen and (max-width: 975px) {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 25px;
+    }
+  }
+
+  // Weather Img
+  &__img {
+    width: 220px;
+
+    @media screen and (max-width: 500px) {
+     width: 200px; 
+    }
+  }
+
+  // Weather Info
+  &__info {
+    display: grid;
+    gap: 20px;
+  }
+
+  // Weather Temp
+  &__temp {
+    font-size: 48px;
+    font-weight: 700;
+
+    @media screen and (max-width: 500px) {
+      font-size: 40px;
+    }
+  }
+
+  // Weather City
+  &__city {
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    text-align: center;
+    background-color: $lightBlue;
+
+    @media screen and (max-width: 500px) {
+      font-size: 26px;
+    }
+  }
+
+  // Weather Date
+  &__date {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  // Weather Bottom
+  &__bottom {
+    padding: 30px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+
+    color: $black;
+    background-color: $white;
+
+    @media screen and (max-width: 1024px) {
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 500px) {
+      gap: 35px; 
+    }
+  }
+
+  // Weather Box
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    // Weather Box Img
+    &-img {
+      width: 55px;
+
+      @media screen and (max-width: 500px) {
+        width: 40px;
+      }
+    }
+
+    // Weather Box Texts
+    &-texts {
+      display: grid;
+      gap: 5px;
+    }
+
+    // Weather Box Text
+    &-text {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    // Weather Box Data
+    &-data {
+      padding: 5px 10px;
+      border-radius: 5px;
+
+      font-size: 16px;
+      font-weight: 500;
+
+      text-align: center;
+      color: $white;
+      background-color: $lightBlue;
+
+      @media screen and (max-width: 500px) {
+        font-size: 14px;
+      }
+    }
+  }
+}

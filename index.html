@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <h1 class="title">☀️ Weather App</h1>
+  
+  <!-- CONTAINER -->
+  <div class="container">
+
+    <!-- WEATHER -->
+    <div class="weather">
+
+      <!-- SEARCH -->
+      <div class="search">
+        <input type="text" class="search__input" id="search">
+        <button class="search__btn" type="button" id="search-btn">Search</button>
+      </div>
+
+      <!-- WEATHER WRAPPER -->
+      <div class="weather__wrapper hidden">
+
+        <!-- WEATHER TOP -->
+        <div class="weather__top">
+          <img src="images/clear.png" class="weather__img" id="weather-img">
+
+          <!-- WEATHER INFO -->
+          <div class="weather__info">
+            <h2 class="weather__temp" id="temp"></h2>
+            <h2 class="weather__city" id="city"></h2>
+            <h2 class="weather__date"><span id="month"></span> <span id="date"></span>, <span id="hour"></span>:<span id="minute"></span></h2>
+          </div>
+        </div>
+
+        <!-- WEATHER BOTTOM -->
+        <div class="weather__bottom">
+
+          <!-- HUMIDITY -->
+          <div class="weather__box">
+            <img src="images/icons/humidity.png" class="weather__box-img">
+
+            <div class="weather__box-texts">
+              <h3 class="weather__box-text">Humidity</h3>
+              <h3 class="weather__box-data" id="humidity"></h3>
+            </div>
+          </div>
+
+          <!-- WIND -->
+          <div class="weather__box">
+            <img src="images/icons/wind.png" class="weather__box-img">
+
+            <div class="weather__box-texts">
+              <h3 class="weather__box-text">Wind</h3>
+              <h3 class="weather__box-data" id="wind"></h3>
+            </div>
+          </div>
+
+          <!-- UV INDEX -->
+          <div class="weather__box">
+            <img src="images/icons/visibility.png" class="weather__box-img">
+
+            <div class="weather__box-texts">
+              <h3 class="weather__box-text">Visibility</h3>
+              <h3 class="weather__box-data" id="visibility"></h3>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- JS LINK -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
