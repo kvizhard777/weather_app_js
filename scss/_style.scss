@@ -21,6 +21,15 @@
 
   background-color: $dark;
 
+  @media screen and (max-width: 800px) {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    background-color: transparent;
+  }
+
   // Search Input
   &__input {
     width: 100%;
@@ -32,6 +41,15 @@
     font-weight: 500;
 
     background-color: $dark;
+
+    @media screen and (max-width: 800px) {
+      font-size: 16px;
+      padding: 20px;
+    }
+
+    @media screen and (max-width: 680px) {
+      font-size: 14px;
+    }
   }
 
   // Search Button

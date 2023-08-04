@@ -84,6 +84,13 @@ legend {
   align-items: center;
   justify-content: space-between;
   background-color: #151515; }
+  @media screen and (max-width: 800px) {
+    .search {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background-color: transparent; } }
   .search__input {
     width: 100%;
     padding-left: 25px;
@@ -92,6 +99,13 @@ legend {
     font-size: 18px;
     font-weight: 500;
     background-color: #151515; }
+    @media screen and (max-width: 800px) {
+      .search__input {
+        font-size: 16px;
+        padding: 20px; } }
+    @media screen and (max-width: 680px) {
+      .search__input {
+        font-size: 14px; } }
   .search__btn {
     padding: 15px 25px;
     height: 100%;
